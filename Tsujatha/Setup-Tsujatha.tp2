@@ -163,7 +163,7 @@ COPY_EXISTING ~songlist.2da~ ~override~
 SET_2DA_ENTRY 0 2 3 ~TSJBLANK.MUS~
 
 // load up ee-specific tra files on BG2EE
-ACTION_IF GAME_IS BG2EE THEN BEGIN
+ACTION_IF GAME_IS ~BG2EE EET~ THEN BEGIN
   LOAD_TRA ~Tsujatha/%LANGUAGE%/setup_ee.tra~
 END
 
